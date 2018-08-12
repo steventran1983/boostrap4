@@ -2,11 +2,32 @@
 
 
 
+.img_reponsive{
+  width:100%;
+  height: auto;
+}
 
+#bg{
+  background-image: url(img/background.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+}
 
+#circle{
+  border-radius: 50%;
+}
 
-
-
+#cir{
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 200px;
+}
 
 
 
