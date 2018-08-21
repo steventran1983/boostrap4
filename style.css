@@ -1,5 +1,24 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
 
+
+
+#blank{
+    background-image: url("img/mac.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+}
+
+/*#blank{
+  height: 20px
+  width: 100%;
+
+  margin: 30px;
+  background-color: #ffffff;
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+}
+*/
 .main-timeline{
   overflow: hidden;
   position: relative;
@@ -250,133 +269,6 @@ Extra (xl) large devices (large desktops, 1200px and up)
 
 
 
-section#timeline {
-  width: 80%;
-  margin: 20px auto;
-  position: relative;
-}
-section#timeline:before {
-  content: '';
-  display: block;
-  position: absolute;
-  left: 50%;
-  top: 0;
-  margin: 0 0 0 -1px;
-  width: 2px;
-  height: 100%;
-  background: rgba(255,255,255,0.2);
-}
-section#timeline article {
-  width: 100%;
-  margin: 0 0 20px 0;
-  position: relative;
-}
-section#timeline article:after {
-  content: '';
-  display: block;
-  clear: both;
-}
-section#timeline article div.inner {
-  width: 40%;
-  float: left;
-  margin: 5px 0 0 0;
-  border-radius: 6px;
-}
-section#timeline article div.inner span.date {
-  display: block;
-  width: 60px;
-  height: 50px;
-  padding: 5px 0;
-  position: absolute;
-  top: 0;
-  left: 50%;
-  margin: 0 0 0 -32px;
-  border-radius: 100%;
-  font-size: 12px;
-  font-weight: 900;
-  text-transform: uppercase;
-  background: #25303B;
-  color: rgba(255,255,255,0.5);
-  border: 2px solid rgba(255,255,255,0.2);
-  box-shadow: 0 0 0 7px #25303B;
-}
-section#timeline article div.inner span.date span {
-  display: block;
-  text-align: center;
-}
-section#timeline article div.inner span.date span.day {
-  font-size: 10px;
-}
-section#timeline article div.inner span.date span.month {
-  font-size: 18px;
-}
-section#timeline article div.inner span.date span.year {
-  font-size: 10px;
-}
-section#timeline article div.inner h2 {
-  padding: 15px;
-  margin: 0;
-  color: #fff;
-  font-size: 20px;
-  text-transform: uppercase;
-  letter-spacing: -1px;
-  border-radius: 6px 6px 0 0;
-  position: relative;
-}
-section#timeline article div.inner h2:after {
-  content: '';
-  position: absolute;
-  top: 20px;
-  right: -5px;
-    width: 10px; 
-    height: 10px;
-  -webkit-transform: rotate(-45deg);
-}
-section#timeline article div.inner p {
-  padding: 15px;
-  margin: 0;
-  font-size: 14px;
-  background: #fff;
-  color: #656565;
-  border-radius: 0 0 6px 6px;
-}
-section#timeline article:nth-child(2n+2) div.inner {
-  float: right;
-}
-section#timeline article:nth-child(2n+2) div.inner h2:after {
-  left: -5px;
-}
-section#timeline article:nth-child(1) div.inner h2 {
-  background: #e74c3c;
-}
-section#timeline article:nth-child(1) div.inner h2:after {
-  background: #e74c3c;
-}
-section#timeline article:nth-child(2) div.inner h2 {
-  background: #2ecc71;
-}
-section#timeline article:nth-child(2) div.inner h2:after {
-  background: #2ecc71;
-}
-section#timeline article:nth-child(3) div.inner h2 {
-  background: #e67e22;
-}
-section#timeline article:nth-child(3) div.inner h2:after {
-  background: #e67e22;
-}
-section#timeline article:nth-child(4) div.inner h2 {
-  background: #1abc9c;
-}
-section#timeline article:nth-child(4) div.inner h2:after {
-  background: #1abc9c;
-}
-section#timeline article:nth-child(5) div.inner h2 {
-  background: #9b59b6;
-}
-section#timeline article:nth-child(5) div.inner h2:after {
-  background: #9b59b6;
-}
-
 
 
 
@@ -545,128 +437,161 @@ section#timeline article:nth-child(5) div.inner h2:after {
 
 
 
+.timeline {
+  position: relative;
+  padding: 0;
+  list-style: none;
 
-.container { 
-  position: relative; 
-  width: 960px; 
-  margin: 0 auto; 
-  -webkit-transition: all 1s ease;
-  -moz-transition: all 1s ease;
-  -o-transition: all 1s ease;
-  transition: all 1s ease;  
-}
- 
-#filters {
-  margin:1%;
-  padding:0;
-  list-style:none;
 }
 
-  #filters li {
-    float:left;
-  }
-  
-  #filters li span {
-    display: block;
-    padding:5px 20px;   
-    text-decoration:none;
-    color:#666;
-    cursor: pointer;
-  }
-  
-  #filters li span.active {
-    background: #e95a44;
-    color:#fff;
-  }
- 
-
- 
-#portfoliolist .portfolio {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -o-box-sizing: border-box;
-  width:23%;
-  margin:1%;
-  display:none;
-  float:left;
-  overflow:hidden;
+.timeline:before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 40px;
+  width: 4px;
+  margin-left: -1.5px; content: '';
+  background-color: #FFFFFF;
+  margin-bottom: 80px;
 }
 
-  .portfolio-wrapper {
-    overflow:hidden;
-    position: relative !important;
-    background: #666;
-    cursor:pointer;
-  }
 
-  .portfolio img {
-    max-width:100%;
-    position: relative;
-    top:0;
-    -webkit-transition: all 600ms cubic-bezier(0.645, 0.045, 0.355, 1);
-    transition:         all 600ms cubic-bezier(0.645, 0.045, 0.355, 1);   
-  }
-  
-  .portfolio .label {
-    position: absolute;
-    width: 100%;
-    height:40px;
-    bottom:-40px;
-    -webkit-transition: all 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
-    transition:         all 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
-  }
-
-    .portfolio .label-bg {
-      background: #e95a44;
-      width: 100%;
-      height:100%;
-      position: absolute;
-      top:0;
-      left:0;
-    }
-  
-    .portfolio .label-text {
-      color:#fff;
-      position: relative;
-      z-index:500;
-      padding:5px 8px;
-    }
-      
-      .portfolio .text-category {
-        display:block;
-        font-size:9px;
-      }
-  
-  .portfolio:hover .label {
-    bottom:0;
-  }
-  .portfolio:hover img {
-    top:-30px;
-  }  
-A simple responsive layout to make sure the grid display properly in different window dimension. Removed this bit if you have your own responsive grid system.
-
-/* #Tablet (Portrait) */
-@media only screen and (min-width: 768px) and (max-width: 959px) {
-  .container {
-    width: 768px; 
-  }
+.timeline > li {
+  position: relative;
+  min-height: 20px;
+  margin-bottom: 20px;
 }
 
-/*  #Mobile (Portrait) - Note: Design for a width of 320px */
-@media only screen and (max-width: 767px) {
-  .container { 
-    width: 95%; 
-  }
-  
-  #portfoliolist .portfolio {
-    width:48%;
-    margin:1%;
-  }   
+
+.timeline > li:after, .timeline > li:before {
+  display: table;
+  content: ' ';
 }
 
-/* #Mobile (Landscape) - Note: Design for a width of 480px */
-@media only screen and (min-width: 480px) and (max-width: 767px) {
-  .container {
-    width: 70%;
-  }
+
+.timeline > li:after {
+  clear: both;
 }
+
+.timeline > li .timeline-panel {
+  position: relative;
+  float: right;
+  width: 100%;
+  padding: 0 20px 0 100px;
+  text-align: left;
+}
+
+.timeline > li .timeline-panel:before {
+  right: auto;
+  left: -15px;
+  border-right-width: 15px;
+  border-left-width: 0;
+}
+
+
+.timeline > li .timeline-panel:after {
+  right: auto;
+  left: -14px;
+  border-right-width: 14px;
+  border-left-width: 0;
+}
+
+
+.timeline > li .timeline-image {
+  position: absolute;
+  z-index: 100;
+  left: 0;
+  width: 80px;
+  height: 80px;
+  margin-left: 0;
+  text-align: center;
+  color: white;
+  border: 4px solid #e9ecef;
+  border-radius: 100%;
+  background-color: #000000;
+}
+
+
+.timeline > li .timeline-image h4 {
+  font-size: 10px;
+  line-height: 14px;
+  margin-top: 12px;
+}
+
+
+.timeline > li.timeline-inverted > .timeline-panel {
+  float: right;
+  padding: 0 20px 0 100px;
+  text-align: left;
+}
+
+
+
+.timeline > li.timeline-inverted > .timeline-panel:before {
+  right: auto;
+  left: -15px;
+  border-right-width: 15px;
+  border-left-width: 0;
+}
+
+
+.timeline > li.timeline-inverted > .timeline-panel:after {
+  right: auto;
+  left: -14px;
+  border-right-width: 14px;
+  border-left-width: 0;
+}
+
+
+.timeline > li:last-child {
+  margin-bottom: 0;
+}
+
+
+.timeline .timeline-heading h4 {
+  margin-top: 0;
+  color: white;
+}
+
+
+.timeline .timeline-heading h4.subheading {
+  text-transform: none;
+}
+
+.timeline .timeline-body > ul,
+.timeline .timeline-body > p {
+  margin-bottom: 0;
+}
+
+
+/*@media (min-width: 768px) {
+  .timeline:before {
+    left: 50%;
+  }
+  .timeline > li {
+    min-height: 50px;
+    margin-bottom: 50px;
+  }
+  .timeline > li .timeline-panel {
+    float: left;
+    width: 40%;
+    padding: 10px 10px 10px 10px;
+    text-align: right;
+  }
+  .timeline > li .timeline-image {
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    margin-left: -50px;
+  }
+  .timeline > li .timeline-image h4 {
+    font-size: 9px;
+    line-height: 18px;
+    margin-top: 16px;
+  }
+  .timeline > li.timeline-inverted > .timeline-panel {
+    float: right;
+    padding: 0 10px 20px 20px;
+    text-align: left;
+  }
+}*/*/
